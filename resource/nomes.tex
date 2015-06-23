@@ -1,0 +1,72 @@
+%%------------------------------------------------------------------------------
+%%----------------Variaveis para o LaTeX no Relatório---------------------------
+\newcommand{\universidade}{Universidade de Bras\'ilia - Campus Gama}
+\newcommand{\hell}{Requisitos de Software}		%nome do arquivo
+% \renewcommand{\autor}{\rafael}							%criador do pdf - só observado nos detalhes do pdf
+\newcommand{\assunto}{Ferramenta de Gerência de Requisitos}			%Nome do experimento
+\newcommand{\ver}{\assunto}						%numeração do experimento
+\newcommand{\professor}{George Marscicano}
+\newcommand{\curso}{ENGENHARIA DE SOFTWARE}
+\newcommand{\turma}{D}
+
+%%------------------------------------------------------------------------------
+%%------------------------Detalhes para serem revistos--------------------------
+\newcommand{\keyw}{Requirements manager, \assunto}	%Keywords
+\newcommand{\entrega}{\today}		%data de entrega do relatório
+
+
+%%------------------------------------------------------------------------------
+%%------------------------------Nomes-------------------------------------------
+%\newcommand{\luiz}{\href{http://lattes.cnpq.br/1109478949026592}{Luiz Fernando Gomes de Oliveira}}	%Para link
+\newcommand{\bruno}{{Bruno Contessotto Bragança Pinheiro}}
+\newcommand{\eduardo}{{Eduardo Brasil Martins}}	
+\newcommand{\rafael}{{Rafael Fazzolino Pinto Barbosa}}					%Sem link
+\newcommand{\thiago}{{Thiago Ramires Kairala}}					%Sem link
+				%Sem link
+
+\newcommand{\rafaelmatricula}{11/0136942}
+\newcommand{\thiagomatricula}{12/0042916}
+\newcommand{\eduardomatricula}{11/0115104}
+\newcommand{\brunomatricula}{09/0107853}
+
+%----------------------Foto e bibliografia do(s) autor(es)----------------------
+%%------------------------------------------------------------------------------
+%					  Deve de ser COLADO ao final do texto
+%%------------------------------------------------------------------------------
+%	\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{./fts/luiz}}]{\luiz}\label{luiz}
+%	É, sou eu. Aparecendo aqui só de brinks. Meio que trollando um relatório.
+%	\end{IEEEbiography}
+%
+%	\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{ffuu}}]{Helbert Junior}\label{panda}
+%	Pow, eu tinha que aparecer também né?
+%	\end{IEEEbiography}
+%%------------------------------------------------------------------------------
+
+%%------------------------------------------------------------------------------
+%%-----------------------------Organização--------------------------------------
+\makeatletter
+\@ifclassloaded{scrartcl}% Slide
+{
+	\newcommand{\names}{\rafael}
+	\newcommand{\namecapa}{\fazzolino \\ \fazzolino}
+	%\newcommand{\allmatriculas}{\luizmatricula,\canelamatricula}
+}
+{
+	\newcommand{\names}{\bruno~-~\brunomatricula\\\eduardo~-~\eduardomatricula\\\rafael~-~\rafaelmatricula\\\thiago~-~\thiagomatricula}
+
+}
+\makeatother
+
+
+\newcommand{\cor}{vermelho}
+\newcommand{\comprimeto}{20m}
+\title{\ver}
+\author{\names}
+\date{\entrega}
+
+
+
+%%------------------------------------------------------------------------------
+% Cabeçalho das páginas, se tiver no modelo
+\markboth{Universidade de Bras\'ilia - Campus Gama - FGA, \entrega}
+{Shell \MakeLowercase{\textit{et al.}}: \ver}
